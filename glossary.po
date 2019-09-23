@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: Python 3.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-06 11:59-0400\n"
-"PO-Revision-Date: 2019-08-23 15:19+0200\n"
+"PO-Revision-Date: 2019-09-23 00:15-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: \n"
+"Last-Translator: David Suárez Pascal <david.suarez@yahoo.com>\n"
 "Language-Team: es\n"
 "Language: es_ES\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: ../Doc/glossary.rst:5
 msgid "Glossary"
@@ -124,22 +124,30 @@ msgid ""
 "in the :attr:`__annotations__` special attribute of modules, classes, and "
 "functions, respectively."
 msgstr ""
+"Las anotaciones de las variables locales no son accesibles en tiempo de "
+"ejecución, pero las anotaciones de variables globales, atributos de clase y "
+"funciones son almacenadas en el  atributo especial :attr:`__annotations__` "
+"de los módulos, las clases y las funciones, respectivamente."
 
 #: ../Doc/glossary.rst:54
 msgid ""
 "See :term:`variable annotation`, :term:`function annotation`, :pep:`484` "
 "and :pep:`526`, which describe this functionality."
 msgstr ""
+"Ver :term:`variable annotation`, :term:`function annotation`, :pep:`484` y :"
+"pep:`526`, que describen esta funcionalidad."
 
 #: ../Doc/glossary.rst:56
 msgid "argument"
-msgstr ""
+msgstr "argumento"
 
 #: ../Doc/glossary.rst:58
 msgid ""
 "A value passed to a :term:`function` (or :term:`method`) when calling the "
 "function.  There are two kinds of argument:"
 msgstr ""
+"Un valor pasado a una :term:`function` (o :term:`method`) cuando la función "
+"se invoca. Hay dos clases de argumentos:"
 
 #: ../Doc/glossary.rst:61
 msgid ""
@@ -148,6 +156,10 @@ msgid ""
 "by ``**``.  For example, ``3`` and ``5`` are both keyword arguments in the "
 "following calls to :func:`complex`::"
 msgstr ""
+":dfn:`keyword argument`: un argumento precedido por un identificador (p. ej. "
+"``nombre=``) en la invocación de una función o pasado como un valor en un "
+"diccionario precedido por ``**``.  Por ejemplo, tanto ``3``como ``5`` son "
+"argumentos por nombre en las siguientes llamadas a :func:`complex`::"
 
 #: ../Doc/glossary.rst:69
 msgid ""
@@ -156,6 +168,11 @@ msgid ""
 "be passed as elements of an :term:`iterable` preceded by ``*``. For example, "
 "``3`` and ``5`` are both positional arguments in the following calls::"
 msgstr ""
+":dfn:`positional argument`: un argumento que no se pasa por nombre. Los "
+"argumentos por posición pueden aparecer al principio de una lista de "
+"argumentos y/o ser pasados como elementos de un :term:`iterable` precedido "
+"por ``*``. Por ejemplo, tanto ``3`` como ``5`` son argumentos por posición "
+"en las siguientes invocaciones::"
 
 #: ../Doc/glossary.rst:78
 msgid ""
@@ -164,6 +181,10 @@ msgid ""
 "Syntactically, any expression can be used to represent an argument; the "
 "evaluated value is assigned to the local variable."
 msgstr ""
+"Los argumentos se asignan a las variables locales nombradas en el cuerpo de "
+"una función. Ver en la sección :ref:`calls` las reglas que gobiernan esta "
+"asignación. Sintácticamente, se puede usar cualquier expresión para "
+"representar un argumento; el valor evaluado se asigna a la variable local."
 
 #: ../Doc/glossary.rst:83
 msgid ""
@@ -171,10 +192,13 @@ msgid ""
 "difference between arguments and parameters <faq-argument-vs-parameter>`, "
 "and :pep:`362`."
 msgstr ""
+"Véanse también la entrada del glosario :term:`parameter`, la pregunta de las "
+"FAQ sobre :ref:`la diferencia entre argumentos y parámetros <faq-argument-vs-"
+"parameter>` y la :pep:`362`."
 
 #: ../Doc/glossary.rst:86
 msgid "asynchronous context manager"
-msgstr ""
+msgstr "manejador de contexto asìncrono"
 
 #: ../Doc/glossary.rst:88
 msgid ""
@@ -182,10 +206,13 @@ msgid ""
 "statement by defining :meth:`__aenter__` and :meth:`__aexit__` methods.  "
 "Introduced by :pep:`492`."
 msgstr ""
+"An object which controls the environment seen in an :keyword:`async with` "
+"statement by defining :meth:`__aenter__` and :meth:`__aexit__` methods.  "
+"Introduced by :pep:`492`."
 
 #: ../Doc/glossary.rst:91
 msgid "asynchronous generator"
-msgstr ""
+msgstr "generador asíncrono"
 
 #: ../Doc/glossary.rst:93
 msgid ""
@@ -194,6 +221,10 @@ msgid ""
 "that it contains :keyword:`yield` expressions for producing a series of "
 "values usable in an :keyword:`async for` loop."
 msgstr ""
+"Una función que devuelve un :term:`asynchronous generator iterator`.  Se "
+"parece a una función de co-rutina definida con:keyword:`async def` excepto "
+"que contiene expresiones :keyword:`yield` para producir una serie de valores "
+"utilizables en un ciclo :keyword:`async for`."
 
 #: ../Doc/glossary.rst:98
 msgid ""
@@ -201,16 +232,22 @@ msgid ""
 "*asynchronous generator iterator* in some contexts.  In cases where the "
 "intended meaning isn't clear, using the full terms avoids ambiguity."
 msgstr ""
+"Usualmente se refiere a una función generadora asíncrona, pero podría "
+"referirse a un *iterador generador asíncrono* en algunos contextos.  En los "
+"casos en los que el significado querido no es claro el uso de los términos "
+"completos evita la ambigüedad."
 
 #: ../Doc/glossary.rst:102
 msgid ""
 "An asynchronous generator function may contain :keyword:`await` expressions "
 "as well as :keyword:`async for`, and :keyword:`async with` statements."
 msgstr ""
+"Una función generadora asíncrona podría contener tanto expresiones :keyword:"
+"`await` como :keyword:`async for` y sentencias :keyword:`async with`."
 
 #: ../Doc/glossary.rst:105
 msgid "asynchronous generator iterator"
-msgstr ""
+msgstr "iterador generador asíncrono"
 
 #: ../Doc/glossary.rst:107
 msgid "An object created by a :term:`asynchronous generator` function."
